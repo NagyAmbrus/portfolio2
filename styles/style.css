@@ -1,3 +1,109 @@
-html{
-    background-color: black;
+/* Alap stílusok */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Fejléc */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Rólam szakasz */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+}
+
+/* Projektek szakasz */
+#projects {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.project {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Kapcsolat szakasz */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+/* Reszponzív dizájn */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #projects .project {
+        width: 100%;
+    }
+
+    #about, #projects, #contact {
+        padding: 30px 0;
+    }
+}
+.project img {
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
 }
