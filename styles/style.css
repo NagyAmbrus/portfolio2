@@ -107,3 +107,43 @@ footer {
 .project:hover img {
     transform: scale(1.05);
 }
+/* Kép kör alakúvá alakítása */
+.profile-pic img {
+    width: 150px;   /* Kép szélessége */
+    height: 150px;  /* Kép magassága */
+    border-radius: 50%; /* Kör alakúvá teszi */
+    object-fit: cover; /* A képet kitölti a keret, miközben megtartja az arányait */
+    border: 3px solid #fff; /* Fehér szegély a kép körül (opcionális) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Árnyék hozzáadása a kép köré (opcionális) */
+    margin-right: 20px; /* Térköz a szöveg és a kép között */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
